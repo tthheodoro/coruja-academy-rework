@@ -1,0 +1,48 @@
+/*
+* VARIABLES
+* - Ficheiro destinado a todas as variables do projeto
+*/
+
+
+:root {
+  /* 🎨 Cores */
+  --blue01: #42446e;
+  --grey01: #040d11; 
+  --grey02: #363636;
+  --grey03: #666666;
+  --grey04: #a7a7a7;
+  --grey05: #cccccc;
+  --green01: #018c0f;
+  --green02: #d7ffe0;
+  --white: #eef7fb;
+  --primaryGradient: linear-gradient(#98c7e7, #4a4dd3);
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+  --fontWeightBold: 600;
+  --fontWeightBold: 700;
+}
+
+html[data-theme="light"] {
+  --background: var(--white);
+  --colorH1: var(--blue01);
+  --colorH2: var(--blue01);
+  --colorH3: var(--grey03);
+  --colorH4: var(--blue01);
+  --colorP: var(--grey03);
+  --colorPrimaryMenu: var(--grey03);
+  --colorText: var(--blue01);
+  --colorBorder: #949494;
+}
+
+html[data-theme="dark"] {
+  --background: var(--grey01);
+  --colorH1: var(--grey05);
+  --colorH2: var(--grey05);
+  --colorH3: var(--grey04);
+  --colorH4: var(--grey05);
+  --colorP: var(--grey05);
+  --colorPrimaryMenu: var(--grey04);
+  --colorText: var(--white);
+  --colorBorder: #949494;
+}
