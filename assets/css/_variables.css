@@ -1,11 +1,17 @@
-/*
-* VARIABLES
-* - Ficheiro destinado a todas as variables do projeto
-*/
-
-
+/* =========================================
+   VARIÁVEIS GLOBAIS
+   ========================================= */
 :root {
-  /* 🎨 Cores */
+  /* Cores Coruja-Academy (Novas) */
+  --color-primary-teal: #2A6A65;
+  --color-dark-teal: #143D39;
+  --color-orange: #F27A22;
+  --color-orange-hover: #d96819;
+  --color-bg-light: #F8F6F0;
+  --color-text-dark: #333333;
+  --color-text-light: #ffffff;
+  
+  /* Cores de Sistema (Antigas) */
   --blue01: #42446e;
   --grey01: #040d11; 
   --grey02: #363636;
@@ -16,11 +22,14 @@
   --green02: #d7ffe0;
   --white: #eef7fb;
   --primaryGradient: linear-gradient(#98c7e7, #4a4dd3);
+  
+  /* Tipografia */
+  --font-main: 'Poppins', sans-serif;
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
   --fontWeightBold: 600;
-  --fontWeightBold: 700;
+  --fontWeightSuperBold: 700;
 }
 
 html[data-theme="light"] {

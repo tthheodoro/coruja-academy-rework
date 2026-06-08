@@ -1,0 +1,25 @@
+/* =========================================
+   PÁGINA: INÍCIO
+   ========================================= */
+
+.hero-image img {
+  max-width: 450px;
+  height: auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.feature-icon img {
+  width: 100px;
+  height: auto;
+}
+
+.feature-image-wrapper img {
+  width: 120px;
+  border-radius: 8px;
+}
