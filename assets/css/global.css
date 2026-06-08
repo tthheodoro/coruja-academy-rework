@@ -68,6 +68,9 @@ a {
   align-items: center;
   padding: 15px 40px;
   background-color: var(--color-bg-light);
+  
+  position: relative;
+  z-index: 999;
 }
 
 .logo-container {
@@ -87,7 +90,7 @@ a {
   color: var(--color-dark-teal);
 }
 
-.main-nav ul {
+.main-nav > ul {
   display: flex;
   list-style: none;
   gap: 25px;
@@ -211,5 +214,47 @@ a {
     margin-top: 40px; 
   }
 
-  
+
+}
+
+
+/* --- Menu Dropdown (Atualizado para Clique) --- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Garante que começa sempre escondido */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-width: 240px;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  font-weight: 400;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--color-bg-light);
+  color: var(--color-orange);
+}
+
+/* A classe 'show' será adicionada pelo JavaScript quando clicarmos */
+.dropdown.show .dropdown-menu {
+  display: flex;
 }

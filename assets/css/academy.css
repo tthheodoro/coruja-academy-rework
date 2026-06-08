@@ -1,0 +1,100 @@
+/* =========================================
+   PÁGINA: PROJETO CORUJA-ACADEMY
+   ========================================= */
+
+.institucional-section {
+  background-color: #55A8A1; /* O verde claro da imagem */
+  padding: 80px 0 120px 0;
+  min-height: calc(100vh - 100px); /* Garante que preenche o ecrã */
+}
+
+/* Cabeçalho */
+.inst-header {
+  text-align: center;
+  color: #113f3b; /* Texto escuro por cima do verde */
+  margin-bottom: 60px;
+}
+
+.inst-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inst-meta {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 0.95rem;
+}
+
+/* Grelha de 3 colunas */
+.inst-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Cartões Brancos */
+.inst-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.inst-card:hover {
+  transform: translateY(-5px);
+}
+
+.inst-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-text-dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.inst-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  flex-grow: 1; /* Empurra o botão para baixo */
+}
+
+.inst-link {
+  color: #8b5cf6; /* Roxo da imagem original */
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.inst-link:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .inst-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inst-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inst-grid {
+    grid-template-columns: 1fr;
+  }
+  .inst-header h1 {
+    font-size: 2.2rem;
+  }
+}

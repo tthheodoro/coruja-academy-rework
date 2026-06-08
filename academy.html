@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+  <!-- (Mesmo <head> e <header> do programas.html, mudando apenas o CSS carregado para "projeto-coruja.css" e o título) -->
+  <head>
+    <title>Projeto Institucional | Coruja-Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/_variables.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/projeto-coruja.css" />
+  </head>
+  <body>
+    <!-- (Header omitido por brevidade, usar o mesmo) -->
+
+    <main>
+      <section class="institucional-section">
+        <div class="container">
+          
+          <header class="inst-header">
+            <h1>Projeto Coruja-Academy</h1>
+            <div class="inst-meta">
+              <span>Código da operação: <strong>CENTRO2030-FSE+-02338300</strong></span>
+              <span><strong>Literacia Financeira Digital para a Inclusão Social</strong></span>
+            </div>
+          </header>
+
+          <div class="inst-grid">
+            
+            <div class="inst-card">
+              <h3>Sobre o Projeto</h3>
+              <p>Identificação, objetivos e duração.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+            <div class="inst-card">
+              <h3>Atividades</h3>
+              <p>AEC's, Clube, Plataforma e Jovens Adultos PDCI.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+            <div class="inst-card">
+              <h3>Parceiros</h3>
+              <p>Município de Castanheira de Pera, CERCICAPER.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+            <div class="inst-card">
+              <h3>Resultados & Métricas</h3>
+              <p>Indicadores, metas e monitorização.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+            <div class="inst-card">
+              <h3>Financiamento & Transparência</h3>
+              <p>Valores elegíveis e fontes.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+            <div class="inst-card">
+              <h3>Notícias & Eventos</h3>
+              <p>Marcos, reuniões, imprensa, marketing.</p>
+              <a href="#" class="inst-link">Ler mais →</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdownToggle = document.querySelector('.dropdown > a');
+        const dropdownParent = document.querySelector('.dropdown');
+
+        if(dropdownToggle) {
+          dropdownToggle.addEventListener('click', function(e) {
+            e.preventDefault(); // Evita que a página faça scroll para o topo ao clicar no "#"
+            dropdownParent.classList.toggle('show');
+          });
+
+          // Truque de UX: Fecha o menu se o utilizador clicar noutro local do site
+          document.addEventListener('click', function(e) {
+            if (!dropdownParent.contains(e.target)) {
+              dropdownParent.classList.remove('show');
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -121,9 +121,9 @@
 
 .btn-outline {
   align-self: flex-start; 
-  background: transparent;
+  background: var(--color-orange);
   border: 1px solid #ccc;
-  color: var(--color-text-dark);
+  color: white;
   padding: 8px 16px;
   font-size: 0.85rem;
   text-transform: uppercase;
