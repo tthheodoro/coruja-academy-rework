@@ -1,0 +1,95 @@
+/* =========================================
+   PÁGINA: DETALHE DO PROJETO (Dinâmica)
+   ========================================= */
+
+.page-bg {
+  background-color: var(--color-bg-light);
+  padding-bottom: 80px;
+}
+
+/* Banner de Topo */
+.detalhe-hero {
+  background-color: var(--color-primary-teal);
+  padding: 80px 20px 120px 20px; /* Espaço extra em baixo para o cartão sobrepor */
+  text-align: center;
+}
+
+.detalhe-hero h1 {
+  color: var(--color-text-light);
+  font-size: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+/* Caixa de Conteúdo Sobreposta */
+.detalhe-content-section {
+  margin-top: -60px; /* Puxa o cartão para cima do banner verde */
+  position: relative;
+  z-index: 10;
+}
+
+.detalhe-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 60px 80px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Formatação Dinâmica do Texto Injetado */
+.detalhe-card h2 {
+  color: var(--color-dark-teal);
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-bg-light);
+  padding-bottom: 10px;
+}
+
+.detalhe-card h2:first-child {
+  margin-top: 0; /* Remove a margem do primeiro título */
+}
+
+.detalhe-card p {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.detalhe-card .intro-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+}
+
+.detalhe-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.detalhe-card li {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* Botão de Voltar */
+.back-action {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .detalhe-card {
+    padding: 40px 30px;
+  }
+  .detalhe-hero h1 {
+    font-size: 1.8rem;
+  }
+}
