@@ -258,3 +258,165 @@ a {
 .dropdown.show .dropdown-menu {
   display: flex;
 }
+
+/*
+*
+* FOOTER
+*
+*/
+
+
+.footerWrapper .mainFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--grey03);
+
+}
+
+/* =========================================
+   FOOTER GLOBAL
+   ========================================= */
+.main-footer {
+  background-color: var(--color-dark-teal); /* Verde escuro da marca em vez de preto */
+  color: var(--color-text-light);
+  padding-top: 60px;
+  margin-top: 40px; /* Garante espaço da secção anterior */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Estilos da Lista de Contactos */
+.contact-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+  color: #cccccc; /* Cinza claro para leitura mais suave */
+  font-size: 0.95rem;
+}
+
+.contact-list strong {
+  color: #ffffff;
+}
+
+/* Estilo para links de email e telefone */
+.contact-list a {
+  color: #4da6ff; /* O azul claro do site original */
+  transition: color 0.3s;
+}
+
+.contact-list a:hover {
+  color: var(--color-orange); /* Toque da nova identidade ao passar o rato */
+}
+
+.privacy-link {
+  display: inline-block;
+  color: #4da6ff;
+  text-decoration: underline;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.privacy-link:hover {
+  color: var(--color-orange);
+}
+
+/* Coluna Sobre */
+.footer-column p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.footer-column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+}
+
+.footer-column:last-child p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  max-width: 500px;
+}
+
+/* Redes Sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Círculo subtil transparente */
+  border-radius: 50%;
+  color: #ffffff;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.social-icon:hover {
+  background-color: var(--color-orange);
+  transform: translateY(-4px); /* Pequeno salto ao passar o rato */
+  color: #ffffff;
+}
+
+.social-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.1); /* Faz o ícone "crescer" um bocadinho dentro do círculo */
+}
+
+/* Barra de Copyright (Fundo) */
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2); /* Escurece ligeiramente o verde escuro */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Linha divisória muito ténue */
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+/* Responsividade para Telemóveis e Tablets */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
