@@ -23,3 +23,241 @@
   width: 120px;
   border-radius: 8px;
 }
+
+/* =========================================
+   TESTEMUNHOS
+   ========================================= */
+.testimonials-section {
+  background-color: #f4f7f8; /* Fundo cinza/azul muito claro, como na imagem */
+  padding: 80px 0;
+}
+
+.section-header-centered {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.section-header-centered h2 {
+  font-size: 2.2rem;
+  color: var(--color-text-dark);
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.section-header-centered p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.test-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 50%; /* Faz o logo ficar redondo */
+}
+
+.testimonial-card h4 {
+  font-size: 1.1rem;
+  color: var(--color-text-dark);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial-card h5 {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.btn-outline-dark {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid var(--color-text-dark);
+  color: var(--color-text-dark);
+  border-radius: 6px; /* Botão ligeiramente mais quadrado como na foto */
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-text-dark);
+  color: white;
+}
+
+.text-center { text-align: center; }
+
+/* =========================================
+   PARCERIAS
+   ========================================= */
+.partners-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.partners-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.partners-text {
+  flex: 1;
+  position: sticky;
+  top: 100px; /* Faz o texto ficar fixo enquanto fazes scroll nos logos */
+}
+
+.partners-text .subtitle {
+  color: var(--color-primary-teal);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.partners-text h2 {
+  font-size: 2.5rem;
+  color: var(--color-text-dark);
+  margin: 10px 0 20px 0;
+  line-height: 1.2;
+}
+
+.partners-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.partners-logos-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: #f4f7f8;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.partner-box {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.partner-box h3 {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.partner-box ul {
+  list-style: none;
+}
+
+.partner-box li {
+  margin-bottom: 10px;
+}
+
+.partner-box a {
+  color: var(--color-primary-teal);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.partner-box a:hover {
+  color: var(--color-orange);
+}
+
+/* =========================================
+   BANNER DE FINANCIAMENTO
+   ========================================= */
+.funding-banner {
+  background-color: var(--color-primary-teal);
+  padding: 30px 0;
+  border-top: 4px solid var(--color-primary-teal); /* A barra verde no topo */
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.funding-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.funding-logos img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+.funding-banner p {
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsividade Global */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners-layout {
+    flex-direction: column; /* Coloca texto em cima e grelha em baixo no telemóvel */
+  }
+  .partners-text {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .partners-logos-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .funding-logos {
+    gap: 20px;
+  }
+}

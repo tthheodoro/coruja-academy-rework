@@ -9,12 +9,24 @@
   padding: 0 20px;
 }
 
-/* Imagem Hero do Artigo */
+.post-hero-image {
+  text-align: center; 
+  margin-bottom: 40px;
+}
+
 .post-hero-image img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 40px;
+  max-width: 400px; 
+  height: auto; /* Deixa a imagem assumir a sua altura natural proporcional */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+}
+
+/* Em telemóveis, a imagem continua a adaptar-se perfeitamente aos 100% da largura do ecrã */
+@media (max-width: 768px) {
+  .post-hero-image img {
+    height: auto; 
+  }
 }
 
 /* Cabeçalho do Artigo */
