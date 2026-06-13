@@ -30,7 +30,7 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li class="dropdown">
-            <a href="#" class="active">Projetos ▾</a>
+            <a href="#">Projetos ▾</a>
             <ul class="dropdown-menu">
               <li><a href="programas.html">Programas</a></li>
               <li><a href="academy.html">Projeto Coruja-Academy</a></li>
@@ -189,25 +189,6 @@
         </div>
       </div>
     </footer>
-        <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const dropdownToggle = document.querySelector('.dropdown > a');
-        const dropdownParent = document.querySelector('.dropdown');
-
-        if(dropdownToggle) {
-          dropdownToggle.addEventListener('click', function(e) {
-            e.preventDefault(); // Evita que a página faça scroll para o topo ao clicar no "#"
-            dropdownParent.classList.toggle('show');
-          });
-
-          // Truque de UX: Fecha o menu se o utilizador clicar noutro local do site
-          document.addEventListener('click', function(e) {
-            if (!dropdownParent.contains(e.target)) {
-              dropdownParent.classList.remove('show');
-            }
-          });
-        }
-      });
-    </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

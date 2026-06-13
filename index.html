@@ -171,48 +171,67 @@
           </div>
 
           <div class="partners-logos-grid">
-            <div class="partner-box">
-              <h3>Parceiros Institucionais</h3>
-              <ul>
-                <li>
-                  <img src="./assets/images/figueiro.webp" alt="Logo figueiro" class="test-logo">
-                  <a href="#">Município de Figueiró dos Vinhos</a>
-                </li>
-                <li>
-                  <img src="./assets/images/castanheira.webp" alt="Logo castanheira" class="test-logo">
-                  <a href="#">Município de Castanheira de Pera</a>
-                </li>
-                <li>
-                  <img src="./assets/images/cercicaper.webp" alt="Logo cercicaper" class="test-logo">
-                  <a href="#">CERCICAPER – Cultivar Inclusão</a>
-                </li>
-                <li>
-                  <img src="./assets/images/centroinveste.webp" alt="Logo centroinveste" class="test-logo">
-                  <a href="#">Centro Investe – Incubadora</a>
-                </li>
-              </ul>
-            </div>
             
             <div class="partner-box">
-              <h3>Avaliação de Impacto</h3>
-              <ul>
-                <li><a href="#">Católica CESOP – Centro de Estudos</a></li>
-              </ul>
+              <h3>Parceiros Institucionais</h3>
+              <div class="partner-items">
+                <div class="partner-item">
+                  <img src="./assets/images/figueiro.webp" alt="Figueiró dos Vinhos">
+                  <a href="#">Município de Figueiró dos Vinhos</a>
+                </div>
+                <div class="partner-item">
+                  <img src="./assets/images/castanheira.webp" alt="Castanheira de Pera">
+                  <a href="#">Município de Castanheira de Pera</a>
+                </div>
+                <div class="partner-item">
+                  <img src="./assets/images/cercicaper.webp" alt="CERCICAPER">
+                  <a href="#">CERCICAPER – Cultivar Inclusão</a>
+                </div>
+                <div class="partner-item">
+                  <img src="./assets/images/centroinveste.webp" alt="Centro Investe">
+                  <a href="#">Centro Investe – Incubadora</a>
+                </div>
+              </div>
             </div>
 
             <div class="partner-box">
               <h3>Parceiros Tecnológicos</h3>
-              <ul>
-                <li><a href="#">Casulo Software – Apoio Técnico</a></li>
-              </ul>
+              <div class="partner-items">
+                <div class="partner-item">
+                  <img src="./assets/images/casulo.webp" alt="Casulo Software">
+                  <a href="#">Casulo Software – Apoio Técnico</a>
+                </div>
+                <div class="partner-item">
+                  <img src="./assets/images/futurity.webp" alt="Futurity Glimpse">
+                  <a href="#">Entidade promotora e coordenadora do projeto Coruja-Academy</a>
+                </div>
+              </div>
             </div>
 
             <div class="partner-box">
-              <h3>Entidade Promotora</h3>
-              <ul>
-                <li><a href="#">Futurity Glimpse Lda.</a></li>
-              </ul>
+              <h3>Avaliação de Impacto</h3>
+              <div class="partner-items">
+                <div class="partner-item">
+                  <img src="./assets/images/catolica.webp" alt="Católica CESOP">
+                  <a href="#">Avaliação de impacto do projeto realizada pelo CESOP – Centro de Estudos e Sondagens de Opinião da Universidade Católica Portuguesa.</a>
+                </div>
+              </div>
             </div>
+
+            <div class="partner-box">
+              <h3>Projeto cofinanciado pelo Programa Portugal 2030 – FSE+</h3>
+              <div class="partner-items">
+                <div class="partner-item">
+                  <img src="./assets/images/inovacaosocial.webp" alt="Portugal Inovação Social">
+                  <a href="#">Portugal Inovação Social – iniciativa cofinanciada pelo Fundo Social Europeu+, no âmbito do Portugal 2030</a>
+                </div>
+                <div class="partner-item">
+                  <img src="./assets/images/centro.webp" alt="Centro 2030">
+                  <a href="#">Programa Regional do Centro – Portugal 2030, cofinanciado pelo Fundo Social Europeu +</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -281,25 +300,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const dropdownToggle = document.querySelector('.dropdown > a');
-        const dropdownParent = document.querySelector('.dropdown');
-
-        if(dropdownToggle) {
-          dropdownToggle.addEventListener('click', function(e) {
-            e.preventDefault(); // Evita que a página faça scroll para o topo ao clicar no "#"
-            dropdownParent.classList.toggle('show');
-          });
-
-          // Truque de UX: Fecha o menu se o utilizador clicar noutro local do site
-          document.addEventListener('click', function(e) {
-            if (!dropdownParent.contains(e.target)) {
-              dropdownParent.classList.remove('show');
-            }
-          });
-        }
-      });
-    </script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

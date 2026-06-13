@@ -421,3 +421,19 @@ a {
     gap: 40px;
   }
 }
+
+.feature-icon-equipa img {
+  width: 100px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.frase-destaque {
+  max-width: 800px;       
+  margin: 40px auto;      
+  text-align: center;     
+  font-size: 1.1rem;      
+  line-height: 1.6;       
+  color: var(--color-text-dark); 
+  font-weight: var(--fontWeightSuperBold);
+}

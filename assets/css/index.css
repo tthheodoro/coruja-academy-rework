@@ -118,7 +118,7 @@
 .text-center { text-align: center; }
 
 /* =========================================
-   PARCERIAS
+   PARCERIAS (ATUALIZADO)
    ========================================= */
 .partners-section {
   padding: 80px 0;
@@ -134,7 +134,7 @@
 .partners-text {
   flex: 1;
   position: sticky;
-  top: 100px; /* Faz o texto ficar fixo enquanto fazes scroll nos logos */
+  top: 100px;
 }
 
 .partners-text .subtitle {
@@ -167,39 +167,58 @@
   border-radius: 12px;
 }
 
+/* O Cartão Branco */
 .partner-box {
-  text-align: center;
   background: white;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  text-align: center;
 }
 
+/* Título de cada Cartão */
 .partner-box h3 {
-  font-size: 0.9rem;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  margin-bottom: 25px;
   font-weight: 700;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #f4f7f8;
+  padding-bottom: 15px;
+  line-height: 1.4;
 }
 
-.partner-box ul {
-  list-style: none;
+/* Contentor dos Itens (Logos + Links) */
+.partner-items {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Espaço entre cada bloco de logo+texto */
 }
 
-.partner-box li {
-  margin-bottom: 10px;
+/* Cada Item Individual */
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* Espaço exato entre o logo e o link */
 }
 
-.partner-box a {
+/* A Regra de Ouro para os Logos não partirem o site */
+.partner-item img {
+  max-width: 130px; /* Nenhum logo pode ser mais largo que isto */
+  height: 60px;     /* Força uma altura uniforme */
+  object-fit: contain; /* Garante que o logo encaixa na caixa sem ser distorcido/esmagado */
+}
+
+/* Os Links */
+.partner-item a {
   color: var(--color-primary-teal);
   font-size: 0.85rem;
   text-decoration: underline;
+  line-height: 1.5;
   transition: color 0.3s;
 }
 
-.partner-box a:hover {
+.partner-item a:hover {
   color: var(--color-orange);
 }
 
