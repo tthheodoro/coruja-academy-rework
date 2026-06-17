@@ -1,5 +1,16 @@
 # 🦉 Concept Redesign: Coruja-Academy
 
+🚀 **Live Demo:** [Clica aqui para explorar o site a funcionar online](coloca-aqui-o-teu-link-do-github-pages)
+
+## O Antes e o Depois
+
+*(Coloca aqui as imagens na pasta do teu repositório e usa este código para as mostrar)*
+![Comparação do Cabeçalho](./assets/images/header-comparacao.png)
+![Comparação do Blogue](./assets/images/blogue-comparacao.png)
+![Comparação do Footer](./assets/images/footer-comparacao.png)
+
+---
+
 ## 1. O Desafio e o Propósito
 
 A Coruja-Academy é um projeto inovador nascido em Figueiró dos Vinhos, focado em literacia financeira, Web3, Blockchain e Inteligência Artificial para jovens. Sendo uma iniciativa ligada ao futuro da tecnologia, o desafio foi criar uma interface (UI) que refletisse essa vanguarda digital, mantendo a confiança e clareza exigidas por um projeto educativo e institucional.
