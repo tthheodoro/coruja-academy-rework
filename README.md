@@ -4,7 +4,6 @@
 
 ## O Antes e o Depois
 
-*(Coloca aqui as imagens na pasta do teu repositório e usa este código para as mostrar)*
 ![Comparação do Cabeçalho](./assets/images/header-comparacao.png)
 ![Comparação do Blogue](./assets/images/blogue-comparacao.png)
 ![Comparação do Footer](./assets/images/footer-comparacao.png)
