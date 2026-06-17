@@ -1,6 +1,6 @@
 # 🦉 Concept Redesign: Coruja-Academy
 
-🚀 **Live Demo:** [Clica aqui para explorar o site a funcionar online]([https://tthheodoro.github.io/coruja-academy-rework/])
+🚀 **Live Demo:** [https://tthheodoro.github.io/coruja-academy-rework](https://tthheodoro.github.io/coruja-academy-rework/)
 
 ## O Antes e o Depois
 
